@@ -1,0 +1,61 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:76px;
+}
+
+.heading h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #3B404F;
+    margin: 0 auto 40px auto;
+}
+
+.heading p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #6D7396;
+    width: 719px;
+    margin: auto;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    column-gap: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #212121;
+    justify-content: center;
+}
+.navList li{
+    cursor: pointer;
+}
+
+.imgGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    grid-gap:1px;
+    padding:0;
+}
+
+.imgGrid li img{
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,1 @@
+export { TwoColBanner } from './twoColBanner'

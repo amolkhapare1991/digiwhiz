@@ -1,0 +1,7 @@
+export { Banner } from './banner'
+export { EmployeeDetails } from './employeeDetails'
+export { Featured } from './featured'
+export { Footer } from './footer'
+export { Header } from './header'
+export { Quote } from './quote'
+export { TwoColBanner } from './twoColBanner'

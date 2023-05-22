@@ -1,0 +1,52 @@
+.twoColBanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 96px;
+    margin-bottom: 130px;
+}
+
+.twoColBanner div {
+    background: #F8F8F8;
+}
+
+.twoColBanner>img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 40px;
+    padding-left: 50px;
+    width: 60%;
+}
+
+.info:first-child {
+    margin-top: 30px;
+}
+
+.info:not(:last-child) {
+    margin-bottom: 51px;
+}
+
+.text h6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #3B404F;
+    margin: 0;
+}
+
+.text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6D7396;
+    margin: 20px 0 0 0;
+}

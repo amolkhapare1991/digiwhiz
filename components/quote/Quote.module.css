@@ -1,0 +1,38 @@
+.quote {
+    display: flex;
+    padding: 0 200px;
+    background-color: #FAB702;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+}
+
+.quote button {
+    height: 48px;
+    width: 151px;
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #F9B701;
+}
+
+.info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.info a{
+    color:#000000;
+    font-style: italic;
+}
