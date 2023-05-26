@@ -7,7 +7,7 @@ export const Banner = () => {
             <Splide aria-label="My Favorite Images" options={{ type: 'loop', pagination: true }}>
                 <SplideSlide>
                     <div className={styles.banner}>
-                        <Image src="/bingWallpaper.png" alt="Image 1" height={699} width={1900} />
+                        <Image src="/BingWallpaper.png" alt="Image 1" height={699} width={1900} />
                     </div>
                     <div className={styles.bannerTextWrapper}>
                     </div>
