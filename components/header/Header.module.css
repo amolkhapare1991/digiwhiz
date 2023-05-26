@@ -49,7 +49,9 @@
     column-gap: 22px;
     align-items: center;
 }
-
+.activeLink{
+    color:orange;
+}
 .navWrapper nav a {
     text-decoration: none;
     font-family: 'Roboto';
@@ -59,3 +61,56 @@
     line-height: 24px;
     color: #000;
 }
+.hamburger{
+    display:none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .headWrapperOne, .header {
+         padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .headWrapperOne{
+        font-size: 12px;
+    }
+    .contact {
+         display:grid;
+    }
+    .hamburger{
+        display:block;
+    }
+    .navWrapper{
+        position: absolute;
+        top:165px;
+        left:0;
+        z-index:9;
+        width:50%;
+        background-color: #fff;
+        flex-direction: column-reverse;
+        padding:20px;
+    }
+    .mobileNav{
+        display: none;
+    }
+    .navWrapper nav{
+        margin-top:20px;
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        gap:10px;
+    }
+    .navWrapper nav a{
+        border-bottom:1px solid grey;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .headWrapperOne {
+         padding: 0 20px;
+    }
+}
+
+
+

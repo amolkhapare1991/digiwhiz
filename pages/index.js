@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
       <Banner/>
       <Quote/>
-      <TwoColBanner/>
+      <TwoColBanner/> 
       <Featured/>
-      <EmployeeDetails/>
+      <EmployeeDetails/> 
     </div>
   )
 }

@@ -1,12 +1,11 @@
 .footer {
     margin-top: 71px;
     display: flex;
-    padding: 0 200px;
+    padding: 8px 200px;
     background-color: #4C5B6D;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    height: 60px;
 }
 
 .footer p {
@@ -35,3 +34,28 @@
     text-transform: capitalize;
     color: #D8DEFF;
 }
+
+@media only screen and (max-width:1024px){
+    .footer{
+        padding: 8px 50px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .footer{
+        padding: 8px 50px;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .footer nav{
+        display:grid;
+        width:100%;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .footer nav a{
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+    }
+}
+

@@ -1,7 +1,11 @@
+import React, {useState} from 'react'
 import Link from 'next/link'
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from './Header.module.css'
 export const Header = () => {
+    const router = useRouter();
+    const [hamburgerState, setHamburgerState] = useState(false)
     return (
         <div>
             <div className={styles.headWrapperOne}>
@@ -34,13 +38,13 @@ export const Header = () => {
                     height={43}
                     width={123}
                 />
-                <div className={styles.navWrapper}>
+                <div className={`${styles.navWrapper} ${hamburgerState ? styles.mobileNav :''}`}>
                     <nav>
-                        <Link href="/">About</Link>
-                        <Link href="/features">Features</Link>
-                        <Link href="/project">Project</Link>
-                        <Link href="/pages">Pages</Link>
-                        <Link href="/contact">Contact</Link>
+                        <Link style={{color:`${router.pathname == "/" ? 'orange' : 'black'}`}} href="/">About</Link>
+                        <Link style={{color:`${router.pathname == "/features" ? 'orange' : 'black'}`}} href="/features">Features</Link>
+                        <Link style={{color:`${router.pathname == "/project" ? 'orange' : 'black'}`}} href="/project">Project</Link>
+                        <Link style={{color:`${router.pathname == "/pages" ? 'orange' : 'black'}`}} href="/pages">Pages</Link>
+                        <Link style={{color:`${router.pathname == "/contact" ? 'orange' : 'black'}`}} href="/contact">Contact</Link>
                     </nav>
                     <Image
                         src='/search.png'
@@ -49,7 +53,12 @@ export const Header = () => {
                         width={14}
                     />
                 </div>
-
+                <Image className={styles.hamburger}  onClick={()=>setHamburgerState(!hamburgerState)}
+                        src='/hamburger.png'
+                        alt='Hamburger'
+                        height={22}
+                        width={22}
+                    />
             </div>
         </div>
     )

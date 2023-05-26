@@ -8,6 +8,7 @@
 }
 .banner img{
      width:100%;
+     height: auto;
 }
 .bannerTextWrapper {
      position: absolute;
@@ -22,8 +23,8 @@
 .bannerText {
      position: absolute;
      width:50%;
-     left: 300px;
-     top: 157px;
+     left: 10vw;
+     top: 7vw;
 }
 
 .bannerText h3 {
@@ -63,3 +64,39 @@
      text-transform: capitalize;
      color: #FFFFFF;
 }
+@media only screen and (max-width:1024px){
+     .bannerText{
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+     }
+     .bannerText h3{
+          font-size: 40px;
+          line-height: 40px;
+          width: auto;
+     }
+
+}
+
+@media only screen and (max-width:678px){
+     .bannerText{
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+     }
+     .bannerText h3{
+          font-size: 24px;
+          line-height: 22px;
+          margin-bottom: 20px;
+     }
+     .bannerText button{
+          height: 40px;
+     }
+     .bannerText p{
+          display: none;
+     }
+
+}
+

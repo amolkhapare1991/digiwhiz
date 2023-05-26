@@ -1,8 +1,8 @@
 .twoColBanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 96px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .twoColBanner div {
@@ -11,7 +11,7 @@
 
 .twoColBanner>img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .info {
@@ -49,4 +49,32 @@
     line-height: 24px;
     color: #6D7396;
     margin: 20px 0 0 0;
+}
+
+@media only screen and (max-width:1024px){
+    .twoColBanner{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .info{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        width:auto;
+        place-items: center;
+    }
+    .text h6{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text p{
+        text-align: justify;
+    }
+    .info:last-child {
+        margin-bottom: 30px;
+    }
 }

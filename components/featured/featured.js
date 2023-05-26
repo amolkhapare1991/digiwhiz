@@ -3,12 +3,13 @@ import Image from "next/image";
 import styles from './Featured.module.css'
 export const Featured = () => {
     const [imgData, setImgData] = useState([])
-
-    const [selectedCategory, setSelectedCategory] = useState(null)
+    const [selectedCategory, setSelectedCategory] = useState('all')
+    const [activeIndex, setActiveIndex] = useState(0)
+    const featureList = ['All','Green Building', 'Healthcare', 'Interior Design', 'Office' ]
 
     useEffect(() => {
         const getImgData = async () => {
-            const res = await fetch('http://localhost:3000/api/imageData')
+            const res = await fetch('https://digiwhiz.vercel.app/api/imageData')
             const imgRes = await res.json()
             if (selectedCategory == null || selectedCategory == 'all') {
                 setImgData(imgRes)
@@ -27,11 +28,13 @@ export const Featured = () => {
             </div>
             <div>
                 <ul className={styles.navList}>
-                    <li onClick={(e) => setSelectedCategory(e.target.innerText.toLowerCase())}>All</li>
-                    <li onClick={(e) => setSelectedCategory(e.target.innerText.toLowerCase())}>Green Building</li>
-                    <li onClick={(e) => setSelectedCategory(e.target.innerText.toLowerCase())}>Healthcare</li>
-                    <li onClick={(e) => setSelectedCategory(e.target.innerText.toLowerCase())}>Interior Design</li>
-                    <li onClick={(e) => setSelectedCategory(e.target.innerText.toLowerCase())}>Office</li>
+                    {
+                        featureList?.map((item,index)=>
+                        <li key={index} 
+                            onClick={(e) => {setActiveIndex(index); setSelectedCategory(e.target.innerText.toLowerCase())}}
+                            style={{color:`${activeIndex==index ? 'orange':'#212121'}`}}
+                            >{item}</li>) 
+                    }
                 </ul>
                 <ul className={styles.imgGrid}>
                     {
