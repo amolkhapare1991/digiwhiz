@@ -38,7 +38,7 @@ export const Header = () => {
                     height={43}
                     width={123}
                 />
-                <div className={`${styles.navWrapper} ${hamburgerState ? styles.mobileNav :''}`}>
+                <div className={`${styles.navWrapper} ${hamburgerState ?  '' : styles.mobileNav}`}>
                     <nav>
                         <Link style={{color:`${router.pathname == "/" ? 'orange' : 'black'}`}} href="/">About</Link>
                         <Link style={{color:`${router.pathname == "/features" ? 'orange' : 'black'}`}} href="/features">Features</Link>
