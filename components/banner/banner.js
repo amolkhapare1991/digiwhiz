@@ -21,7 +21,7 @@ export const Banner = () => {
                 </SplideSlide>
                 <SplideSlide>
                     <div className={styles.banner}>
-                        <Image src="/bingWallpaper.png" alt="Image 1" height={699} width={1900} />
+                        <Image src="/BingWallpaper.png" alt="Image 1" height={699} width={1900} />
                     </div>
                     <div className={styles.bannerTextWrapper}>
                     </div>
@@ -35,7 +35,7 @@ export const Banner = () => {
                 </SplideSlide>
                 <SplideSlide>
                     <div className={styles.banner}>
-                        <Image src="/bingWallpaper.png" alt="Image 1" height={699} width={1900} />
+                        <Image src="/BingWallpaper.png" alt="Image 1" height={699} width={1900} />
                     </div>
                     <div className={styles.bannerTextWrapper}>
                     </div>

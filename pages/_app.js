@@ -1,3 +1,4 @@
+import '../styles/custom.css'
 import '@splidejs/react-splide/css'
 import { Header, Footer } from '../components'
 function MyApp({ Component, pageProps }) {
